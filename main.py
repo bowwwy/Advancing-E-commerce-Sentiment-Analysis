@@ -175,17 +175,17 @@ class TabView(ctk.CTkTabview):
         if value == 0:
             self.result_image = ctk.CTkImage(light_image=self.sad, size=(100, 100))
             self.result_text.configure(text="The model predicted the \nreview to be negative.")
-            self.result_text.grid_configure(row=0, column=0, padx=(92, 0), pady=(240, 0), sticky="nw")
+            self.result_text.grid_configure(row=0, column=0, padx=(220, 0), pady=(600, 0), sticky="nw")
 
         elif value == 1:
             self.result_image = ctk.CTkImage(light_image=self.neutral, size=(100, 100))
             self.result_text.configure(text="The model predicted the \nreview to be neutral.")
-            self.result_text.grid_configure(row=0, column=0, padx=(92, 0), pady=(240, 0), sticky="nw")
+            self.result_text.grid_configure(row=0, column=0, padx=(220, 0), pady=(600, 0), sticky="nw")
 
         elif value == 2:
             self.result_image = ctk.CTkImage(light_image=self.happy, size=(100, 100))
             self.result_text.configure(text="The model predicted the \nreview to be positive.")
-            self.result_text.grid_configure(row=0, column=0, padx=(92, 0), pady=(240, 0), sticky="nw")
+            self.result_text.grid_configure(row=0, column=0, padx=(220, 0), pady=(600, 0), sticky="nw")
 
         else:
             raise ValueError("Value must be 0, 1, or 2.")
